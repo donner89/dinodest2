@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html {
+  background-image: url(./images/fourDino.gif);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100%; 
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  color: #000000;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 30px;
+  margin-top: auto;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 4px;
+}
+
+form {
+  width: 60vw; 
+  max-width: 500px; 
+  min-width: 300px; 
+  margin: 0 auto; 
+  padding-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block; 
+  width: 80%; 
+  margin: 10px auto; 
+  border-radius: 5px;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 14px;
+  color: #888888;
+}
+
+#mainBox {
+  background: #93dc5c;
+  padding: 20px;
+  height: 350px;
+  width: 300px;
+  border-radius: 10px; /* Rounded corners for the main box */
+  border: 10px solid black;
+  position: relative;
+  top: -100px;
+  margin-bottom: 20px;
+  z-index: 10;
+  transform: translateY(-100px);
+}
+
+.tab-container {
+  margin: 20px auto;
+  overflow: hidden;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  border: 5px solid black;
+  border-radius: 15px; /* Rounded corners for the tab container */
+}
+
+.tab {
+  width: 50%;
+  float: left;
+  border: none; /* No border for tabs */
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: 'Luckiest Guy', sans-serif;
+  box-sizing: border-box;
+  text-align: center; /* Center the text inside the tabs */
+  background-color: #fbbc04; /* Default color for inactive tabs */
+}
+
+/* Style adjustments for active tab to differentiate from inactive tabs */
+.tab.active {
+  background-color: #fdd663; /* Active tab color */
+  font-weight: bold;
+}
+
+/* Style for the tab content area */
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: #93dc5c; /* Content area background color */
+  border-top: none; /* Remove top border to blend with active tab */
+  min-height: 200px; /* Minimum content area height */
+  clear: both; /* Clear floated elements */
+}
+
+/* Display active tab content */
+.tab-content.active {
+  display: block;
+}
+
+/* Fade in effect for tab content */
+@keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Style for buttons within forms */
+button {
+  background-color: #fbbc04; /* Button background color */
+  border: 2px solid black; /* Button border */
+  border-radius: 0px; /* Button border radius */
+  padding: 10px 20px; /* Button padding */
+  font-family: 'Luckiest Guy', sans-serif; /* Button font family */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Cursor to indicate button */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #fdd663; /* Button hover color */
+}

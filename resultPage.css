@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(./images/fourDino.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px; /* Adjust to ensure content is below any header */
+    height: calc(100% - 100px); /* Adjust based on padding-top */
+}
+
+#infoBox {
+    width: 300px; /* Adjust width to make the box smaller */
+    background: rgba(147, 220, 92, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 7.5px solid black;
+    overflow-y: auto; /* Hide the scrollbar */
+    box-sizing: border-box;
+    height: 400px; /* Adjust height to make the box shorter */
+    margin-right: -7.5px; /* Overlap the border with the map */
+}
+
+#map {
+    width: 400px; /* Adjust width if needed */
+    border-radius: 10px;
+    border: 7.5px solid black;
+    box-sizing: border-box;
+    height: 400px; /* Match height of infoBox */
+    margin-left: -7.5px; /* Overlap the border with the infoBox */
+}
+
+.logo {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10; /* Make sure the logo is above the map and box */
+}
+
+.place-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* For Webkit browsers */
+#infoBox::-webkit-scrollbar {
+    width: 10px; /* Scrollbar width */
+}
+
+#infoBox::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+}
+
+#infoBox::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Thumb color */
+}
+
+#infoBox::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3); /* Thumb color on hover */
+}
